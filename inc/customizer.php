@@ -49,7 +49,7 @@ function twentyseventeen_customize_register( $wp_customize ) {
 	) );
 
 	// Panels
-	for( $i = 1; $i <= 4; $i++ ) {
+	for ( $i = 1; $i <= 4; $i++ ) {
 
 		$wp_customize->add_section( 'panel_' . $i, array(
 			'title'           => sprintf( __( 'Panel %s', 'twentyseventeen' ), $i ),
