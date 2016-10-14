@@ -52,7 +52,7 @@ function twentyseventeen_customize_register( $wp_customize ) {
 	for( $i = 1; $i <= 4; $i++ ) {
 
 		$wp_customize->add_section( 'panel_' . $i, array(
-			'title'           => __( sprtinf( 'Panel %s', $i ), 'twentyseventeen' ),
+			'title'           => __( sprintf( 'Panel %s', $i ), 'twentyseventeen' ),
 			'active_callback' => 'is_front_page',
 			'panel'           => 'options_panel',
 			'description'     => __( 'Add an image to your panel by setting a featured image in the page editor. If you don&rsquo;t select a page, this panel will not be displayed.', 'twentyseventeen' ),
